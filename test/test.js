@@ -10,7 +10,7 @@ function ucFirst(str){
 }
 
 describe('ucFirst',function(){
-  it('str with first character touppercase',function(){
+  it('str with first character to uppercase',function(){
     ucFirst("jhon");
     assert.strictEqual(ucFirst("jhon"),"Jhon");
   });
@@ -20,12 +20,6 @@ describe('ucFirst',function(){
   });
 });
 
-
-
-
-
-
-
 let stri;
 let maxlength ;
 function truncate(stri, maxlength) {
@@ -34,28 +28,25 @@ function truncate(stri, maxlength) {
   } else {
     return stri;
   }
- 
 }
 describe('truncate',function(){
   it('truncate stri to shorter string',function(){
-    truncate("What I'd like to tell on this topic is:", 20) == "What I'd like to te…";
     assert.equal(truncate("What I'd like to tell on this topic is:",20),"What I'd like to te…");
   });
   it('does not change stri',function(){
-    truncate("Hi everyone!", 20) == "Hi everyone!";
     assert.equal( truncate("Hi everyone!", 20), "Hi everyone!") 
   });
 });
 
 
 
-let string;
+let string; // don't name your variables string
 function extractCurrencyValue(string){
   return Number(string.slice(1));
 }
 describe('extractCurrencyValue',function(){
   it('extract the numeric value',function(){
     extractCurrencyValue('$120');
-    assert.strictEqual(extractCurrencyValue('$120'),120);
+    assert.strictEqual(extractCurrencyValue('$120'), 120);
   });
 });
