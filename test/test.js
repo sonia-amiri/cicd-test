@@ -40,13 +40,13 @@ describe('truncate',function(){
 
 
 
-let string; // don't name your variables string
+let string; 
 function extractCurrencyValue(string){
   return Number(string.slice(1));
 }
 describe('extractCurrencyValue',function(){
   it('extract the numeric value',function(){
     extractCurrencyValue('$120');
-    assert.strictEqual(extractCurrencyValue('$120'), 120);
+    assert.strictEqual(extractCurrencyValue('$120'), 130);
   });
 });
