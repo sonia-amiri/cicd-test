@@ -12,7 +12,7 @@ function ucFirst(str){
 describe('ucFirst',function(){
   it('str with first character to uppercase',function(){
     ucFirst("jhon");
-    assert.strictEqual(ucFirst("jhon"),"Jhon");
+    assert.strictEqual(ucFirst("jhon"),"hesam");
   });
   it('when str is empty',function(){
     ucFirst("");
