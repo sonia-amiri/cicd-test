@@ -47,6 +47,6 @@ function extractCurrencyValue(string){
 describe('extractCurrencyValue',function(){
   it('extract the numeric value',function(){
     extractCurrencyValue('$120');
-    assert.strictEqual(extractCurrencyValue('$120'),130);
+    assert.strictEqual(extractCurrencyValue('$120'),120);
   });
 });
